@@ -1,0 +1,22 @@
+.card__like {
+  visibility: hidden;
+  background-image: url(../../../images/heart.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  height: 36px;
+  align-self: center;
+  background-position: center;
+  transition: all 0.4s ease-in-out;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+.card__like:hover {
+  background-image: url(../../../images/heart-hover.png);
+  transform: scale(1.03);
+}
