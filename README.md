@@ -3,6 +3,7 @@
 с готовым проектом можно ознакомиться по ссылке:
 * [Ссылка на проект в GH](https://happywrites.github.io/cat-pinterest)
 
+****
 
 ## Задание для Front-end стажёра
 
