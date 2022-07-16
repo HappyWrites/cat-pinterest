@@ -28,10 +28,10 @@ function Main({ cards }) {
     <main className="content">
       <section className="cards">
         <ul className="cards__items">
-          <Route exact path="/">
+          <Route exact path="/cat-pinterest">
             {cards.map((item) => (<Card key={item.id} id={item.id} {...item} card={item} onPressLike={pressLike} />))}
           </Route>
-          <Route path="/favorites">
+          <Route path="/cat-pinterest/favorites">
             {favoritesCats.map((item) => (<Favorites key={item.id} favorites={item} onPressLike={pressLike} />))}
           </Route>
         </ul>
