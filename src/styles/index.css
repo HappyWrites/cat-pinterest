@@ -11,3 +11,5 @@
 @import url(../blocks/card/__like/_active/card__like_active.css);
 @import url(../blocks/scroll/scroll.css);
 @import url(../blocks/scroll/__text/scroll__text.css);
+@import url(../blocks/loader/loader.css);
+@import url(../blocks/lds-roller/lds-roller.css);

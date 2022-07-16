@@ -1,9 +1,9 @@
 export class Api {
   constructor(url) {
-    this._url = url;    
+    this._url = url;
   }
 
-  getInitialCards() {
+  getCards() {
     return fetch(this._url)
       .then(res => this._checkResult(res));
   }

@@ -28,16 +28,13 @@ function Main({ cards }) {
     <main className="content">
       <section className="cards">
         <ul className="cards__items">
-          <Route exact path="/cat-pinterest">
+          <Route exact path="/">
             {cards.map((item) => (<Card key={item.id} id={item.id} {...item} card={item} onPressLike={pressLike} />))}
           </Route>
-          <Route path="/cat-pinterest/favorites">
+          <Route path="/favorites">
             {favoritesCats.map((item) => (<Favorites key={item.id} favorites={item} onPressLike={pressLike} />))}
           </Route>
         </ul>
-      </section>
-      <section className="scroll">
-        <p className="scroll__text"> ... загружаем еще котиков ... </p>
       </section>
     </main>
   )
