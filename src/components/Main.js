@@ -2,6 +2,8 @@ import React from "react";
 import { Route } from "react-router-dom";
 import Card from "./Card";
 import Favorites from "./Favorites";
+import NoFavorites from "./NoFavorites";
+import Scroll from "./Scroll";
 
 function Main({ cards }) {
   const [favoritesCats, setFavoritesCards] = React.useState([]);
@@ -30,9 +32,13 @@ function Main({ cards }) {
         <ul className="cards__items">
           <Route exact path="/cat-pinterest">
             {cards.map((item) => (<Card key={item.id} id={item.id} {...item} card={item} onPressLike={pressLike} />))}
+            <Scroll />
           </Route>
           <Route path="/cat-pinterest/favorites">
-            {favoritesCats.map((item) => (<Favorites key={item.id} favorites={item} onPressLike={pressLike} />))}
+            {favoritesCats.length === 0 ? (
+              <NoFavorites />
+            ) : (
+              favoritesCats.map((item) => (<Favorites key={item.id} favorites={item} onPressLike={pressLike} />)))}
           </Route>
         </ul>
       </section>

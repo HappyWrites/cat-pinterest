@@ -3,7 +3,6 @@ import api from "../utils/Api";
 import Header from "./Header";
 import Loader from "./Loader";
 import Main from "./Main";
-import Scroll from "./Scroll";
 
 function App() {
   const [cards, setCards] = React.useState([]);
@@ -35,7 +34,7 @@ function App() {
         })
         .catch((err) => {
           console.log(err);
-        })        
+        })
     }
   }
 
@@ -48,7 +47,6 @@ function App() {
     <div className="page">
       <Header />
       {isLoading ? <Loader /> : <Main cards={cards} />}
-      <Scroll />
     </div>
   )
 }

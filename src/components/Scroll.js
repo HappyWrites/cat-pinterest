@@ -1,7 +1,7 @@
 function Scroll() {
   return (
     <section className="scroll">
-      <p className="scroll__text"> ... загружаем еще котиков ... </p>
+      <p className="scroll__text">загружаем еще котиков</p>
     </section>
   )
 }
